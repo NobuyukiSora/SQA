@@ -1,6 +1,7 @@
 package org.example;
 
-import java.util.Scanner;
+import org.example.day7.cluster.Aldo;
+import org.example.day7.cluster.Day7Fruit;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,9 +31,7 @@ public class Main {
 //        asemka.checkBahanBakar();
 //        asemka.checkBill();
 
-        Day7Fruit anggur = new Day7Fruit();
-        anggur.grams = 10;
-        anggur.calsPerGrams = 1;
+
 
     }
 }

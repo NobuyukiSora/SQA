@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sales Order Test">
+    <test verbose="0" name="Auth">
+<!--        groups digunakan untuk mendefenisikan groups mana yang ingin dijalankan-->
+        <groups>
+            <define name="mobile and tablet apps">
+                <include name="mobile"/>
+                <include name="tablet"/>
+            </define>
+            <run>
+                <include name="mobile and tablet apps"/>
+                <include name="regtest"/>
+                <include name="high"/>
+                <include name="reg.*"/>
+
+                <exclude name="product"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.day11.TestLogin"></class>
+            <class name="org.example.day11.TestProduct"></class>
+        </classes>
+    </test>
+</suite>
